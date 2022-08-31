@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="calc-container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+
+    <div class="tip-content-container">
+      <div class="tip-cal">
+        <form onsubmit="event.preventDefault();">
+          <label for="bill-amt">Bill</label>
+         <input type="number" name="bill-amt" class="bill-input">
+        </form>
+  
+       <div class="tip-percent">
+         <p class="select-tip">Select Tip %</p> 
+         <div class="btns-container">
+          <button class="percent-btn btn-one">5%</button>
+          <button class="percent-btn btn-two">10%</button>
+          <button class="percent-btn btn-three">15%</button>
+          <button class="percent-btn btn-four">25%</button>
+          <button class="percent-btn btn-five">50%</button>
+          <input type="number" class="custom-input" placeholder="Custom">
+         </div>
+        
+       </div>
+  
+       <form onsubmit="event.preventDefault();">
+        <label for="pple-total">Number of People</label>
+        <input type="number" name="pple-total" class="pple-total">
+       </form>
+       
+      </div>
+       
+       <div class="tip-amt-content">
+         <div class="tip-amt">
+         <p>Tip Amount <br>
+          <span>/ person</span> </p>
+        <p class="dollar">$<span class="money-tip">0.00</span></p> </div>
+         
+       <div class="tip-amt">
+       <p>Total <br>
+        <span>/ person</span> </p> 
+      <p class="dollar">$<span class="money-total">0.00</span></p></div>
+         
+       <button class="reset">Reset</button>
+         
+       </div>
+    </div>
+  
+  </div>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mariam Jolade</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
